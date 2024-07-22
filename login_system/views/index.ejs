@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= locals.text?text:"Login System" %></title>
+    <style>
+        body{
+           background-color: #230c33;
+           
+           
+        }
+        .head {
+            text-align: center;
+            /* margin-top: 200px; */
+            border:2px solid #230C33;
+            width: 400px;
+            height: 200px;
+            /* margin-left: 390px; */
+            background-color: #CAA8F5;
+            border-radius: 30px;
+           /*  margin: auto; */
+
+        }
+        .size {
+            width: 120px;
+            height: 20px;
+        }
+        button {
+            background-color: #9984D4;
+            border-radius: 4px;
+        
+        }
+        h4{
+            color:#592E83;
+        }
+        input{
+            border-radius: 4px;
+            
+        }
+        button.size{
+            width: 60px;
+        }
+        .cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15%;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="head">
+            <h1>Login System</h1>
+            <h4><%=locals.msg%></h4>
+            <form action="/dashboard" method="Post">
+                <input class="size" type="name" placeholder="name" name="name" required>
+                <input class="size" type="password" placeholder="password" name="password" required>
+                <button class="size" type="submit">Submit</button>
+               
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
